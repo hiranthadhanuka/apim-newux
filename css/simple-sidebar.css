@@ -148,3 +148,7 @@
 .action_bt {
     width:90px;
 }
+
+#brtable td {
+    vertical-align: middle;
+}
