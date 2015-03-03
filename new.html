@@ -180,7 +180,7 @@
 
 <!-- Button -->
 <div class="form-group">
-    <button id="create" name="create" class="btn btn-primary">Create API</button>
+    <button id="create" name="create" class="btn btn-primary"  data-toggle="modal" data-target="#myModal2">Create API</button>
 </div>
 
 
@@ -240,7 +240,69 @@ Server  Apache/2.4.7 (Ubuntu)
   </div>
 </div>
 
+<!-- Modal -->
+<div class="modal fade" id="myModal2" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+  <div class="modal-dialog">
+    <div class="modal-content">
+      <div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+        <h4 class="modal-title" id="myModalLabel">API Created</h4>
+      </div>
+      <div class="modal-body">
 
+<div class="alert alert-success alert-dismissible" role="alert">
+  <strong>Well done!</strong> You successfully created "Sample" API with the following default values.
+</div>
+
+<table class="table table-bordered"  style="width:100%">
+  <tr>
+    <td>
+      <table style="width:100%">
+        <tr><td class="label-view">Throttling Tier</td><td class="label-value">Unlimited</td></tr>
+        <tr><td class="label-view">Visibility</td><td class="label-value">Public</td></tr>
+        <tr><td class="label-view">Endpoint</td><td class="label-value">http://gateway/sample/1.0.0</td></tr>
+        <tr><td class="label-view">Resources</td><td class="label-value"></td></tr>
+        <tr><td colspan="2">
+<table class="table">  
+<tr>  
+  <td class="info">GET</td>
+  <td> /* <td>
+  <td>Application & Application User</td>
+  <td>Unlimited</td>
+</tr>          
+<tr>
+  <td class="success">POST</td>
+  <td> /* <td>
+  <td>Application & Application User</td>
+  <td>Unlimited</td>
+</tr>  
+<tr>  
+  <td class="warning">PUT</td>
+  <td> /* <td>
+  <td>Application & Application User</td>
+  <td>Unlimited</td>
+</tr>  
+<tr>  
+  <td class="danger">DELETE</td>
+  <td> /* <td>
+  <td>Application & Application User</td>
+  <td>Unlimited</td>
+</tr>  
+</table>
+        </td><tr>
+      </table>
+    </td>
+  </tr>
+</table>
+                  
+      </div>
+      <div class="modal-footer">        
+        <a href="created.html" class="btn btn-default" >Edit API</a>
+        <a href="index.html" class="btn btn-primary">Go to API List</a>
+      </div>
+    </div>
+  </div>
+</div>
 
 
     <!-- Bootstrap core JavaScript
