@@ -45,7 +45,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#menu-toggle" class="" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
+            <li><a href="#menu-toggle" class="" id="menu-toggle">Toggle Menu</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -79,7 +79,7 @@
                     <a href="index.html">Browse</a>
                 </li>
                 <li>
-                    <a href="new.html">New API</a>
+                    <a href="#">New API</a>
                 </li>
                 <li>
                     <a href="#">Statistics</a>
@@ -103,58 +103,71 @@
                 <div class="row">
                     <div class="col-lg-12">
                     <div class="page-header">
-                      <h2>APIs</h2>
-                    </div>    
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>API</th>
-      <th>Activity</th>
-      <th>Usage</th>  
-      <th>Status</th>                
-      <th>Actions</th>      
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>SampleAPI</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a class="">Publish</a></td>            
-    </tr>
-    <tr>
-      <td>SampleAPI</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a class="">Publish</a></td>            
-    </tr>
-    <tr>
-      <td>SampleAPI</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a class="">Publish</a></td>            
-    </tr>
-                <tr>
-      <td>SampleAPI</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a class="">Publish</a></td>            
-    </tr>
-    <tr>
-      <td>SampleAPI</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a class="">Publish</a></td>            
-    </tr>    
-  </tbody>
-</table>
+                      <h2>Add New API</h2>
+                    </div>                      
+<form class="form-horizontal create_form" action="created.html" method="get">
+<fieldset>
+
+<!-- Text input-->
+<div class="form-inline">
+  <div class="form-group right_pad_10">
+    <label class="control-label" for="name">Name</label>  
+    <div class="">
+    <input id="name" name="name" placeholder="Ex: MyAPI" class="form-control input-md" required="" type="text">
+    <span class="help-block">Display Name of the API</span>  
+    </div>
+  </div>
+  <!-- Text input-->
+  <div class="form-group right_pad_10">
+    <label class="control-label" for="context">Context</label>  
+    <div class="">
+    <input id="context" name="context" placeholder="Ex: myapi" class="form-control input-md" required="" type="text">
+    <span class="help-block">API Context should be unique</span>  
+    </div>
+  </div>
+  <!-- Text input-->
+  <div class="form-group right_pad_10">
+    <label class="control-label" for="version">Version</label>  
+    <div class="">
+    <input id="version" name="version" placeholder="Ex: 1.0.0" class="form-control input-md" required="" type="text">
+    <span class="help-block">Version of the API</span>  
+    </div>
+  </div>
+</div>
+
+<!-- Multiple Radios (inline) -->
+<div class="form-group">
+  <label class="control-label" for="radios">Implementation Method</label>
+  <div class=""> 
+    <label class="radio-inline" for="radios-0">
+      <input name="radios" id="radios-0" value="Endpoint" checked="checked" type="radio">
+      Endpoint
+    </label> 
+    <label class="radio-inline" for="radios-1">
+      <input name="radios" id="radios-1" value="Import Swagger" type="radio">
+      Import Swagger
+    </label> 
+    <label class="radio-inline" for="radios-2">
+      <input name="radios" id="radios-2" value="Mock" type="radio">
+      Mock
+    </label>
+  </div>
+</div>
+
+<!-- Text input-->
+<div class="form-group">
+  <label class="control-label" for="endpoint">Endpoint</label>
+  <input id="endpoint" name="endpoint" placeholder="URL of the endpoint." class="form-control input-md max_width" required="" type="text">
+</div>
+
+<!-- Button -->
+<div class="form-group">
+    <button id="create" name="create" class="btn btn-primary">Create API</button>
+</div>
 
 
+</fieldset>
+</form>
 
 
                     </div>

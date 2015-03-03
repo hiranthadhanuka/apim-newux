@@ -135,3 +135,12 @@
 .create_form{
     padding-left: 15px;
 }
+
+.label-view{
+    padding:4px 10px;text-align: right;font-weight: bold;
+
+}
+
+.label-value{
+    padding:4px 10px;
+}

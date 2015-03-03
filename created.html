@@ -13,7 +13,7 @@
 
     <!-- Bootstrap core CSS -->
     <link href="public/bootstrap/dist/css/bootstrap.css" rel="stylesheet">
-
+    <link href="public/font-awesome/css/font-awesome.min.css" rel="stylesheet">
     <!-- Custom styles for this template -->
     <link href="css/sticky-footer-navbar.css" rel="stylesheet">
     <link href="css/simple-sidebar.css" rel="stylesheet">
@@ -45,7 +45,7 @@
         </div>
         <div id="navbar" class="collapse navbar-collapse">
           <ul class="nav navbar-nav">
-            <li><a href="#menu-toggle" class="" id="menu-toggle"><span class="glyphicon glyphicon-menu-hamburger"></span></a></li>
+            <li><a href="#menu-toggle" class="" id="menu-toggle">Toggle Menu</a></li>
             <li class="dropdown">
               <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-expanded="false">Dropdown <span class="caret"></span></a>
               <ul class="dropdown-menu" role="menu">
@@ -79,7 +79,7 @@
                     <a href="index.html">Browse</a>
                 </li>
                 <li>
-                    <a href="new.html">New API</a>
+                    <a href="#">New API</a>
                 </li>
                 <li>
                     <a href="#">Statistics</a>
@@ -103,60 +103,26 @@
                 <div class="row">
                     <div class="col-lg-12">
                     <div class="page-header">
-                      <h2>APIs</h2>
-                    </div>    
-<table class="table table-striped">
-  <thead>
-    <tr>
-      <th>API</th>
-      <th>Activity</th>
-      <th>Usage</th>  
-      <th>Status</th>                
-      <th>Actions</th>      
-    </tr>
-  </thead>
-  <tbody>
-    <tr>
-      <td>SampleAPI</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a class="">Publish</a></td>            
-    </tr>
-    <tr>
-      <td>SampleAPI</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a class="">Publish</a></td>            
-    </tr>
-    <tr>
-      <td>SampleAPI</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a class="">Publish</a></td>            
-    </tr>
-                <tr>
-      <td>SampleAPI</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a class="">Publish</a></td>            
-    </tr>
-    <tr>
-      <td>SampleAPI</td>
-      <td></td>
-      <td></td>
-      <td></td>
-      <td><a class="">Publish</a></td>            
-    </tr>    
-  </tbody>
+                      <h2>SampleAPI : /sample/1.0.0 </h2>
+                      <strong style="color:#999">State : </strong><strong><i class="fa fa-circle" style="color:orange"></i> Created</strong>
+                    </div>                      
+<div class="alert alert-success alert-dismissible" role="alert">
+  <button type="button" class="close" data-dismiss="alert" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+  <strong>Well done!</strong> You successfully created "Sample" API with the following default values.
+</div>
+
+<table class="table table-bordered">
+  <tr>
+    <td>
+      <table>
+        <tr><td class="label-view">Tier</td><td class="label-value">Unlimited</td></tr>
+        <tr><td class="label-view">Visibility</td><td class="label-value">Public</td></tr>
+        <tr><td class="label-view">Endpoint</td><td class="label-value">http://gateway/sample/1.0.0</td></tr>
+        <tr><td class="label-view">Resources</td><td class="label-value"></td></tr>
+      </table>
+    </td>
+  </tr>
 </table>
-
-
-
-
                     </div>
                 </div>
             </div>
