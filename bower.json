@@ -9,7 +9,8 @@
 "ignore": [
  ],
  "dependencies": {
-  "bootstrap":"latest",
-  "font-awesome":"latest"
+    "bootstrap":"latest",
+    "font-awesome":"latest",
+    "bootstrap-vertical-tabs" : "latest"
   }
 }    

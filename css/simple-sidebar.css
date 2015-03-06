@@ -152,3 +152,7 @@
 #brtable td {
     vertical-align: middle;
 }
+
+.status_w {
+    width:90px !important; display: block;padding: 5px
+}
