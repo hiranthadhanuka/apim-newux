@@ -137,7 +137,7 @@
 
 .navbar-default {
 	background-color: #3261c0;
-	border-color: #3261c0;
+	border-color: #fff;
 }
 
 html, body {
@@ -288,6 +288,10 @@ a.navbar-brand:hover {
 }
 
 /* custom */
+.wr-header {
+    padding-left:0px;
+}
+
 .logo {
     margin-right:10px;
 }
@@ -307,6 +311,22 @@ a.navbar-brand {
 
 .navbar-brand img {
     float:left;
+}
+
+.ctrl-toggle {
+    display:inline-block;
+    padding:10px;
+    float:left;
+    background:#222;
+    color:#f0f0f0;
+    height:50px;
+    width:50px;
+    padding:15px 0px 0px 18px;
+    margin-right:10px;
+}
+
+a.ctrl-toggle:focus {
+    color:#e4e4e4;
 }
 
 /* icon buttons */
@@ -349,6 +369,11 @@ and (max-width : 1200px) {
 
     a.cu-reg-btn {
         /* padding: 18px 10px 18px 38px; */
+    }
+
+    .container > .navbar-header, .container-fluid > .navbar-header, .container > .navbar-collapse, .container-fluid > .navbar-collapse {
+        margin-right: 0px;
+        margin-left: 0px;
     }
 
 }
